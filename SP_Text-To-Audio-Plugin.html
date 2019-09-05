@@ -66,7 +66,7 @@ if(Input.length > 5000){
 document.getElementById("Btn").value = "<Retry>";
 alert("Oops!\nWe're unable to process your request,\n\nYour text contains " + Input.length + " characters\nincluding (Spaces, Numbers & Symbles).\n\nKeep in mind your text may have never more than 5000 characters...");}else{
 if(Lang == "hi-IN"){
-Player.src = "https://translate.google.com.vn/translate_tts?ie=UTF-8&q=" + Input + "&tl=hi&client=tw-ob";}else{
+Player.src = "https://translate.google.com/translate_tts?ie=UTF-8&q=" + Input + "&tl=hi&client=tw-ob";}else{
 Player.src = "https://text-to-speech-demo.ng.bluemix.net:443/api/v1/synthesize?text=" + Input + "&voice=" + Lang + "&download=true&accept=audio%2Fmp3";}
 Player.play();
 Download.href = Player.src;
